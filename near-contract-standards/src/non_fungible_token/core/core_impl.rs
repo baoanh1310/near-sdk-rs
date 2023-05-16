@@ -495,7 +495,7 @@ impl NonFungibleTokenResolver for NonFungibleToken {
                     true
                 }
             }
-            PromiseResult::Failed => true,
+            _ => true,
         };
 
         // if call succeeded, return early

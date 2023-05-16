@@ -183,7 +183,7 @@ impl FungibleToken {
                     amount
                 }
             }
-            PromiseResult::Failed => amount,
+            _ => amount,
         };
 
         if unused_amount > 0 {
